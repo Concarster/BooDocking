@@ -21,6 +21,7 @@ void Game::InitSystem()
     //PushLayer(new ImgLayer());
     //PushLayer(new KeyCodeLayer());
     PushLayer(new MathLayer());
+    PushOverLay(new boo::ImGuiLayer());
 }
 
 void Game::InitLogger()

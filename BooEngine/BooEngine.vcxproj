@@ -209,9 +209,11 @@
     <ClInclude Include="src\Engine\Events\Event.h" />
     <ClInclude Include="src\Engine\Events\KeyEvent.h" />
     <ClInclude Include="src\Engine\Events\MouseEvent.h" />
+    <ClInclude Include="src\Engine\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\Engine\InputMgr.h" />
     <ClInclude Include="src\Engine\Layers\Layer.h" />
     <ClInclude Include="src\Engine\Layers\LayerStack.h" />
+    <ClInclude Include="src\Engine\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="src\Engine\Platform\Windows\WInputMgr.h" />
     <ClInclude Include="src\Engine\Platform\Windows\Wwindow.h" />
     <ClInclude Include="src\Engine\Util\ApiCode.h" />
@@ -223,8 +225,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Engine\Engine.cpp" />
+    <ClCompile Include="src\Engine\ImGui\ImGuiLayer.cpp" />
     <ClCompile Include="src\Engine\Layers\Layer.cpp" />
     <ClCompile Include="src\Engine\Layers\LayerStack.cpp" />
+    <ClCompile Include="src\Engine\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
     <ClCompile Include="src\Engine\Platform\Windows\WInputMgr.cpp" />
     <ClCompile Include="src\Engine\Platform\Windows\Wwindow.cpp" />
     <ClCompile Include="src\Engine\Util\Log.cpp" />
