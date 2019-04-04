@@ -3,6 +3,7 @@
 #include "Window.h"
 #include "Events\Event.h"
 #include "Events\AppEvent.h"
+#include "Engine\ImGui\ImGuiLayer.h"
 #include "Engine\Layers\LayerStack.h"
 
 namespace boo
@@ -10,10 +11,12 @@ namespace boo
     class BOO_API Engine
     {
     private:
-       
         bool m_Running;
+
         /* uqPtr Platform Indepedent */
         std::unique_ptr<Window> m_Window;
+        //std::unique_ptr<ImGuiLayer> m_ImGuiLayer;
+        ImGuiLayer* m_ImGuiLayer;
 
         LayerStack m_LayerStack;
 

@@ -1,6 +1,7 @@
 #include "Game.h"
 #include "LayerList.h"
 
+
 Game::Game()
 {
     Init();
@@ -20,8 +21,9 @@ void Game::InitSystem()
     InitLogger();
     //PushLayer(new ImgLayer());
     //PushLayer(new KeyCodeLayer());
-    PushLayer(new MathLayer());
-    PushOverLay(new boo::ImGuiLayer());
+    //PushLayer(new MathLayer());
+    PushLayer(new RenderTestLayer());
+
 }
 
 void Game::InitLogger()

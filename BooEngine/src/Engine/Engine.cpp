@@ -19,6 +19,9 @@ namespace boo
 
         m_Window = std::unique_ptr<Window>(Window::Create());
         m_Window->SetEventCallBack(BIND_EVENT_FN(OnEvent));
+    
+        m_ImGuiLayer = new ImGuiLayer();
+        PushOverLay(m_ImGuiLayer);
     }
 
     Engine::~Engine()
@@ -38,6 +41,14 @@ namespace boo
                 layer->OnUpdate();
 
             //ToPrintMousePos();
+
+            /* ImGui RENDERER*/
+            m_ImGuiLayer->Begin();
+
+            for (Layer* layer : m_LayerStack)
+                layer->OnImGuiRender();
+
+            m_ImGuiLayer->End();
 
             m_Window->OnUpdate();
         }

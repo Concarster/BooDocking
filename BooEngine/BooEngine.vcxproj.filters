@@ -55,9 +55,6 @@
     <ClInclude Include="src\Engine\Layers\LayerStack.h">
       <Filter>Engine\Layers</Filter>
     </ClInclude>
-    <ClInclude Include="src\Engine\Platform\OpenGL\ImGuiOpenGLRenderer.h">
-      <Filter>Engine\Platform\OpenGL</Filter>
-    </ClInclude>
     <ClInclude Include="src\Engine\Platform\Windows\WInputMgr.h">
       <Filter>Engine\Platform\Windows</Filter>
     </ClInclude>
@@ -90,9 +87,6 @@
     <ClCompile Include="src\Engine\Layers\LayerStack.cpp">
       <Filter>Engine\Layers</Filter>
     </ClCompile>
-    <ClCompile Include="src\Engine\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
-      <Filter>Engine\Platform\OpenGL</Filter>
-    </ClCompile>
     <ClCompile Include="src\Engine\Platform\Windows\WInputMgr.cpp">
       <Filter>Engine\Platform\Windows</Filter>
     </ClCompile>
@@ -103,5 +97,6 @@
       <Filter>Engine\Util</Filter>
     </ClCompile>
     <ClCompile Include="src\booPCH.cpp" />
+    <ClCompile Include="src\Engine\ImGui\ImGuiBuild.cpp" />
   </ItemGroup>
 </Project>
